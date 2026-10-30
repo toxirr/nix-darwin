@@ -31,6 +31,7 @@
     biome
     grc
     utm
+    librewolf
 
     tailscale
   ];

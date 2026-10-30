@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   programs.floorp = {
     enable = true;
@@ -11,7 +11,7 @@
       extensions = {
         force = true;
 
-        packages = with inputs.firefox-addons.packages.${pkgs.system}; [
+        packages = with pkgs.firefox-addons; [
           ublock-origin
           darkreader
           sidebery

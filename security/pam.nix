@@ -18,7 +18,7 @@ in
   options = {
     security.pam.services.sudo_local = {
       enable = lib.mkEnableOption "managing {file}`/etc/pam.d/sudo_local` with nix-darwin" // {
-        default = true;
+        default = false;
         example = false;
       };
 

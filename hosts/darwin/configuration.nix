@@ -12,7 +12,7 @@
 
   environment.shells = [ pkgs.fish ];
 
-  home-manager.backupFileExtension = "bacckuptest";
+  home-manager.backupFileExtension = "v2";
 
   programs.fish.enable = true;
 
@@ -94,7 +94,7 @@
   # Enable alternative shell support in nix-darwin.
   # programs.fish.enable = true;
 
-  security.pam.services.sudo_local.touchIdAuth = true;
+  # security.pam.services.sudo_local.touchIdAuth = true;
   # security.pam.services.sudo_local.reattach = false;
   # Set Git commit hash for darwin-version.
   system.configurationRevision = self.rev or self.dirtyRev or null;

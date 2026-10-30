@@ -8,6 +8,9 @@
       search = {
         default = "ddg";
       };
+      userChrome = ''
+        #tabbrowser-tabs { visibility: collapse !important; };
+      '';
       extensions = {
         force = true;
 
@@ -33,3 +36,5 @@
     };
   };
 }
+
+#tabbrowser-tabs { visibility: collapse !important; };

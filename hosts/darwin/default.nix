@@ -1,6 +1,7 @@
 {
   self,
   nix-darwin,
+  firefox-addons,
   home-manager,
   nix-homebrew,
   ...
@@ -10,6 +11,12 @@ nix-darwin.lib.darwinSystem {
 
   modules = [
     ./configuration.nix
+
+    {
+      nixpkgs.overlays = [
+        firefox-addons.overlays.default
+      ];
+    }
 
     nix-homebrew.darwinModules.nix-homebrew
     {
